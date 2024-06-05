@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Автономер АЕ4000ІТ (AE4000IT, АЕ 4000 ІТ, AE 4000 IT) связан с Синий BMW X3 2017 и 2 другими авто" />
+    <meta property="og:title" content="Автономер АЕ4000ІТ" />
+    <meta property="og:image" content="https://baza-gai.com.ua/catalog-images/bmw/x3/III (G01)/image.jpg" />
+
+    <meta name="apple-itunes-app" content="app-id=1580568698, app-argument=https://baza-gai.com.ua/nomer/AE4000IT">
+
+    <meta name="appleid-signin-client-id" content="ua.com.baza-gai">
+    <meta name="appleid-signin-scope" content="email+name">
+    <meta name="appleid-signin-redirect-uri" content="https://baza-gai.com.ua/auth/apple">
+
+
+    <link rel="stylesheet" type="text/css"
+        href="http://127.0.0.1:5500/vendor/bootstrap-icons-1.7.2/bootstrap-icons.css">
+    <!-- google analytics was here -->
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container" id="container-main">
+        <form action="https://baza-gai.com.ua/search" method="GET" class="mt-4">
+            <div class="form-group mb-2">
+                <h3 class="h5 mb-3">Проверка авто по номеру и VIN</h3>
+                <div class="input-group input-group-lg">
+                    <input id="number" type="text" name="digits" value="АЕ4000ІТ" placeholder="Номерной знак или VIN"
+                        class="form-control">
+                    <button class="btn btn-outline-secondary" type="submit">Поиск</button>
+                </div>
+            </div>
+            <div class="text-end mb-2">
+                <a href="https://baza-gai.com.ua/search">
+                    Расширенный поиск
+                </a>
+            </div>
+        </form>
+
+        <ol class="breadcrumb">
+
+            <li class="breadcrumb-item">
+
+                <a href="https://baza-gai.com.ua/regions">
+
+                    Все регионы
+
+                </a>
+            </li>
+
+            <li class="breadcrumb-item">
+
+                <a href="https://baza-gai.com.ua/regions/dnipropetrovsk-oblast">
+
+                    Днепропетровская область
+
+                </a>
+            </li>
+
+            <li class="breadcrumb-item">
+
+                <a href="https://baza-gai.com.ua/regions/dnipropetrovsk-oblast/AE">
+
+                    AE
+
+                </a>
+            </li>
+
+            <li class="breadcrumb-item">
+
+                <a href="https://baza-gai.com.ua/regions/dnipropetrovsk-oblast/AE4000">
+
+                    AE4000
+
+                </a>
+            </li>
+
+            <li class="breadcrumb-item">
+
+                IT
+
+            </li>
+
+        </ol>
+
+        <script src="https://baza-gai.com.ua/vendor/jquery.min.js"></script>
+        <script src="https://baza-gai.com.ua/vendor/bootstrap.min.js?v=2"></script>
+
+        <div class="row">
+            <div class="col-12 mb-4">
+                <div class="card plate-model-card">
+                    <div class="plate-model-card__link plate-model-card__link_horizontal">
+                        <div
+                            class="plate-model-card__img-content plate-model-card__img-content_horizontal float-xl-left">
+                            <img src="https://baza-gai.com.ua/catalog-images/bmw/x3/III%20(G01)/image.jpg" alt="BMW X3"
+                                style="max-width: 100%; height: auto;">
+                            <!-- Добавлены стили для уменьшения размера изображения -->
+                            <div class="plate-model-card__content card-img-overlay">
+                                <div class="plate-model-card__content-top">
+                                    <div class="plate plate_small">
+                                        <div class="plate__flag plate__flag_small">
+                                            <div class="plate__flag-icon plate__flag-icon_small">
+                                                <div class="plate__flag-blue plate__flag-blue_small"></div>
+                                                <div class="plate__flag-yellow plate__flag-yellow_small"></div>
+                                            </div>
+                                            <div class="plate__country plate__country_small">UA</div>
+                                        </div>
+                                        <div class="plate__text plate__text_small">
+                                            AE 4000 IT
+                                        </div>
+                                    </div>
+                                    <div class="plate-model-card__date-registration">
+                                        28.02.2024
+                                    </div>
+                                </div>
+                                <div class="plate-model-card__content-bottom">
+                                    <div>
+                                        <div class="plate-model-card__content-date-model">2017</div>
+                                        <h4 class="plate-model-card__content-title">
+                                            BMW
+                                            X3
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plate-model-card__body">
+                            <ul class="list-group list-group-flush ">
+
+                                <li class="list-group-item plate-model__list-item d-md-flex justify-content-between align-items-center "
+                                    style="border-top: none">
+
+                                    <div class="vin-container">
+                                        <span title="Нажмите, что бы посмотреть VIN-код"
+                                            class="vin-btn__erased vin-code-btn">
+                                            <strong>VIN:</strong>
+                                            <span class="vin-code-erased" data-full="5UXWX9C34H0W67034">
+                                                5UXW########67034
+                                            </span>
+                                            <i class="vin-code-eye-icon bi bi-eye-fill"></i>
+                                        </span>
+                                        <div class="d-none vin-full-wrapper">
+                                            <span id="vin-code-full" class="vin-btn__full">
+                                                <strong>VIN:</strong> <span class="vin-code-full-text"></span>
+                                            </span><span class="btn-copy vin-btn__copy btn-copy-big-card">
+                                                <svg style="cursor: pointer; margin-top: -3px;"
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-clipboard copy-icon"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                                    <path
+                                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                                </svg>
+                                                <svg style="display: none;" xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="currentColor"
+                                                    class="bi bi-check2 copied-icon" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                                                </svg>
+                                            </span>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="mt-2 mt-md-0">Не числится в угоне на <abbr
+                                            title="По данным МВД">11.05.2024</abbr></div>
+                                </li>
+                                <li class="list-group-item plate-model__list-item ">
+                                    <span>
+                                        <b class="text-secondary"><i
+                                                class="bi bi-file-earmark-text-fill plate-model__list-item-icon"></i>Регистрация</b>
+                                        <span class="d-block plate-model__list-item-text">28.02.2024
+                                            <b>(последняя)</b></span>
+                                    </span>
+                                </li>
+                                <li class="list-group-item plate-model__list-item ">
+                                    <span>
+                                        <b class="text-secondary"><i
+                                                class="bi bi-file-earmark-richtext-fill plate-model__list-item-icon"></i>Приметы</b>
+                                        <span class="d-block plate-model__list-item-text">Синий, Универсал, 2.0L</span>
+                                    </span>
+                                </li>
+                                <li class="list-group-item plate-model__list-item ">
+                                    <span>
+                                        <b class="text-secondary"><i
+                                                class="bi bi-file-earmark-check-fill plate-model__list-item-icon"></i>Операция</b>
+                                        <span class="d-block plate-model__list-item-text">
+                                            Другое
+                                            (<a href="#" id="tooltip-0" class="tooltip-dep-oper"
+                                                data-title="Перерегистрация, смена номера">Опер. 410</a>,
+
+                                            <a href="#" class="tooltip-dep-oper" data-title="вул. Сонячне шосе, 2а">ТСЦ
+                                                2348</a>)
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="list-group-item plate-model__list-item ">
+                                    <span>
+                                        <b class="text-secondary"><i
+                                                class="bi bi-geo-alt-fill plate-model__list-item-icon"></i>Адрес</b>
+                                        <span class="d-block plate-model__list-item-text">Дніпропетровська
+                                            область/м.Дніпро, Дніпро</span>
+                                    </span>
+                                </li>
+                            </ul>
+                            <li class="list-group-item plate-model__list-item ">
+                                <span class="plate-model__list-item-text d-block">
+                                    <span>
+
+                                        <a href="https://baza-gai.com.ua/catalog/bmw/x3/photos">
+                                            Все фото
+                                        </a>
+
+                                        |
+
+
+
+                                        <a href="https://baza-gai.com.ua/catalog/bmw/x3/specs">
+                                            Характеристики
+                                        </a>
+                                    </span>
+                                </span>
+                            </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="plate-model" id="0">
+                    <div class="card plate-model-card">
+                        <div class="plate-model-card__link">
+
+                            <div class="plate-model-card__img-content ">
+                                <img class="card-img plate-model-card__img "
+                                    src="https://baza-gai.com.ua/catalog-images/bmw/3er/VI%20(F3x)/image.jpg"
+                                    alt="BMW 3 серии">
+                                <div class="
+                  card-img-overlay 
+                  plate-model-card__content 
+                  
+                ">
+                                    <div class="plate-model-card__content-top">
+
+                                        <div style="" class="plate plate_small">
+                                            <div class="plate__flag plate__flag_small">
+                                                <div class="plate__flag-icon plate__flag-icon_small">
+                                                    <div class="plate__flag-blue plate__flag-blue_small"></div>
+                                                    <div class="plate__flag-yellow plate__flag-yellow_small"></div>
+                                                </div>
+                                                <div class="plate__country plate__country_small">UA</div>
+                                            </div>
+                                            <div class="plate__text plate__text_small">
+
+                                                AE 4000 IT
+                                            </div>
+                                        </div>
+                                        <div class="plate-model-card__date-registration">
+                                            04.05.2023
+                                        </div>
+                                    </div>
+                                    <div class="plate-model-card__content-bottom_align-bottom">
+                                        <div class="plate-model-card__content-bottom-main">
+                                            <div class="">
+                                                <div class="plate-model-card__content-date-model">2014</div>
+                                                <h4 class="plate-model-card__content-title mb-0">
+                                                    BMW
+
+                                                    328I
+
+                                                </h4>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="plate-model-card__body collapse" id="collapse-0">
+                                <ul class="list-group list-group-flush">
+
+
+                                    <li class="list-group-item plate-model-card__list-item">
+
+                                        <div class="vin-container">
+                                            <span title="Нажмите, что бы посмотреть VIN-код"
+                                                class="vin-btn__erased vin-code-btn">
+                                                <strong>VIN:</strong>
+                                                <span class="vin-code-erased" data-full="WBA3B3G52FNR85713">
+                                                    WBA3########85713
+                                                </span>
+                                                <i class="vin-code-eye-icon bi bi-eye-fill"></i>
+                                            </span>
+                                            <div id="vin-full-wrapper" class="d-none">
+                                                <span id="vin-code-full" class="vin-btn__full">
+                                                    <strong>VIN:</strong> <span class="vin-code-full-text"></span>
+                                                </span><span class="btn-copy vin-btn__copy btn-copy-0">
+                                                    <svg style="cursor: pointer; margin-top: -3px;"
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-clipboard copy-icon"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                                        <path
+                                                            d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                                    </svg>
+                                                    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-check2 copied-icon" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                                                    </svg>
+                                                </span>
+
+                                                <script>
+                                                    function initializeCopyToClipboard(textToCopy, btnClass) {
+                                                        const btn = document.querySelector(`.${btnClass}`);
+                                                        const copyBtn = btn.querySelector(".copy-icon");
+                                                        const copied = btn.querySelector(".copied-icon");
+
+                                                        copyBtn.addEventListener("click", () => {
+                                                            copyToClipboard(textToCopy)
+                                                            copyBtn.style.display = "none";
+                                                            copied.style.display = "inline";
+                                                            setTimeout(() => {
+                                                                copyBtn.style.display = "inline";
+                                                                copied.style.display = "none";
+                                                            }, 2000);
+                                                        });
+
+                                                        const copyToClipboard = (text) => {
+                                                            const textarea = document.createElement('textarea');
+                                                            textarea.style.position = 'absolute';
+                                                            textarea.style.left = '-9999px';
+                                                            textarea.value = text;
+                                                            textarea.setAttribute('readonly', '');
+                                                            document.body.appendChild(textarea);
+                                                            textarea.select();
+                                                            document.execCommand('copy');
+                                                            document.body.removeChild(textarea);
+                                                        }
+                                                    };
+                                                </script>
+                                                <script>initializeCopyToClipboard('WBA3B3G52FNR85713', 'btn-copy-0')</script>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li
+                                        class="list-group-item plate-model-card__list-item plate-model-card__list-item_tall">
+                                        <span>
+                                            <b class="text-secondary">
+                                                <i
+                                                    class="bi bi-file-earmark-text-fill plate-model-card__list-item-icon"></i>
+                                                Регистрация
+                                            </b>
+                                            <span class="d-block plate-model-card__list-item-text">04.05.2023</span>
+                                        </span>
+                                    </li>
+
+                                    <li
+                                        class="list-group-item plate-model-card__list-item plate-model-card__list-item_tall ">
+                                        <span>
+                                            <b class="text-secondary">
+                                                <i
+                                                    class="bi bi-file-earmark-richtext-fill plate-model-card__list-item-icon"></i>
+                                                Приметы
+                                            </b>
+                                            <span class="d-block plate-model-card__list-item-text">Белый, Седан,
+                                                2.0L</span>
+                                        </span>
+                                    </li>
+                                    <li
+                                        class="list-group-item plate-model-card__list-item plate-model-card__list-item_tall ">
+                                        <span>
+                                            <b class="text-secondary">
+                                                <i
+                                                    class="bi bi-file-earmark-check-fill plate-model-card__list-item-icon"></i>
+                                                Операция
+                                            </b>
+                                            <span class="d-block plate-model-card__list-item-text">
+                                                Вторичная регистрация
+                                                (<a href="#" id="tooltip-0" class="tooltip-dep-oper"
+                                                    data-title="Перерегистрация, новый собственник (договор в ТСЦ)">Опер.
+                                                    315</a>,
+
+                                                <a href="#" class="tooltip-dep-oper"
+                                                    data-title="вул. Маршала Малиновського, 130">ТСЦ 1241</a>)
+
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li
+                                        class="list-group-item plate-model-card__list-item plate-model-card__list-item_tall ">
+                                        <span>
+                                            <b class="text-secondary">
+                                                <i class="bi bi-geo-alt-fill plate-model-card__list-item-icon"></i>
+                                                Адрес
+                                            </b>
+                                            <span class="d-block plate-model-card__list-item-text">
+                                                Дніпропетровська область/м.Дніпро, Дніпро
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button class="plate-model-card__btn btn btn-primary btn-sm" collapsed
+                                data-bs-toggle="collapse" data-bs-target="#collapse-0" aria-expanded="false"
+                                aria-controls="#collapse-0">
+                                Подробнее
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="plate-model" id="1">
+                    <div class="card plate-model-card">
+                        <div class="plate-model-card__link">
+
+                            <div class="plate-model-card__img-content ">
+                                <img class="card-img plate-model-card__img "
+                                    src="https://baza-gai.com.ua/catalog-images/volkswagen/jetta/VI%20%D0%A0%D0%B5%D1%81%D1%82%D0%B0%D0%B9%D0%BB%D0%B8%D0%BD%D0%B3/image.jpg"
+                                    alt="Volkswagen Jetta">
+                                <div class="
+                  card-img-overlay 
+                  plate-model-card__content 
+                  
+                ">
+                                    <div class="plate-model-card__content-top">
+
+                                        <div style="" class="plate plate_small">
+                                            <div class="plate__flag plate__flag_small">
+                                                <div class="plate__flag-icon plate__flag-icon_small">
+                                                    <div class="plate__flag-blue plate__flag-blue_small"></div>
+                                                    <div class="plate__flag-yellow plate__flag-yellow_small"></div>
+                                                </div>
+                                                <div class="plate__country plate__country_small">UA</div>
+                                            </div>
+                                            <div class="plate__text plate__text_small">
+
+                                                AE 4000 IT
+                                            </div>
+                                        </div>
+                                        <div class="plate-model-card__date-registration">
+                                            31.03.2023
+                                        </div>
+                                    </div>
+                                    <div class="plate-model-card__content-bottom_align-bottom">
+                                        <div class="plate-model-card__content-bottom-main">
+                                            <div class="">
+                                                <div class="plate-model-card__content-date-model">2017</div>
+                                                <h4 class="plate-model-card__content-title mb-0">
+                                                    Volkswagen
+
+                                                    JETTA
+
+                                                </h4>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="plate-model-card__body collapse" id="collapse-1">
+                                <ul class="list-group list-group-flush">
+
+
+                                    <li class="list-group-item plate-model-card__list-item">
+
+                                        <div class="vin-container">
+                                            <span title="Нажмите, что бы посмотреть VIN-код"
+                                                class="vin-btn__erased vin-code-btn">
+                                                <strong>VIN:</strong>
+                                                <span class="vin-code-erased" data-full="3VWD17AJ3HM408917">
+                                                    3VWD########08917
+                                                </span>
+                                                <i class="vin-code-eye-icon bi bi-eye-fill"></i>
+                                            </span>
+                                            <div id="vin-full-wrapper" class="d-none">
+                                                <span id="vin-code-full" class="vin-btn__full">
+                                                    <strong>VIN:</strong> <span class="vin-code-full-text"></span>
+                                                </span><span class="btn-copy vin-btn__copy btn-copy-1">
+                                                    <svg style="cursor: pointer; margin-top: -3px;"
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-clipboard copy-icon"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                                        <path
+                                                            d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                                    </svg>
+                                                    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-check2 copied-icon" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                                                    </svg>
+                                                </span>
+
+                                                <script>
+                                                    function initializeCopyToClipboard(textToCopy, btnClass) {
+                                                        const btn = document.querySelector(`.${btnClass}`);
+                                                        const copyBtn = btn.querySelector(".copy-icon");
+                                                        const copied = btn.querySelector(".copied-icon");
+
+                                                        copyBtn.addEventListener("click", () => {
+                                                            copyToClipboard(textToCopy)
+                                                            copyBtn.style.display = "none";
+                                                            copied.style.display = "inline";
+                                                            setTimeout(() => {
+                                                                copyBtn.style.display = "inline";
+                                                                copied.style.display = "none";
+                                                            }, 2000);
+                                                        });
+
+                                                        const copyToClipboard = (text) => {
+                                                            const textarea = document.createElement('textarea');
+                                                            textarea.style.position = 'absolute';
+                                                            textarea.style.left = '-9999px';
+                                                            textarea.value = text;
+                                                            textarea.setAttribute('readonly', '');
+                                                            document.body.appendChild(textarea);
+                                                            textarea.select();
+                                                            document.execCommand('copy');
+                                                            document.body.removeChild(textarea);
+                                                        }
+                                                    };
+                                                </script>
+                                                <script>initializeCopyToClipboard('3VWD17AJ3HM408917', 'btn-copy-1')</script>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li
+                                        class="list-group-item plate-model-card__list-item plate-model-card__list-item_tall">
+                                        <span>
+                                            <b class="text-secondary">
+                                                <i
+                                                    class="bi bi-file-earmark-text-fill plate-model-card__list-item-icon"></i>
+                                                Регистрация
+                                            </b>
+                                            <span class="d-block plate-model-card__list-item-text">31.03.2023</span>
+                                        </span>
+                                    </li>
+
+                                    <li
+                                        class="list-group-item plate-model-card__list-item plate-model-card__list-item_tall ">
+                                        <span>
+                                            <b class="text-secondary">
+                                                <i
+                                                    class="bi bi-file-earmark-richtext-fill plate-model-card__list-item-icon"></i>
+                                                Приметы
+                                            </b>
+                                            <span class="d-block plate-model-card__list-item-text">Серый, Седан,
+                                                1.8L</span>
+                                        </span>
+                                    </li>
+                                    <li
+                                        class="list-group-item plate-model-card__list-item plate-model-card__list-item_tall ">
+                                        <span>
+                                            <b class="text-secondary">
+                                                <i
+                                                    class="bi bi-file-earmark-check-fill plate-model-card__list-item-icon"></i>
+                                                Операция
+                                            </b>
+                                            <span class="d-block plate-model-card__list-item-text">
+                                                Другое
+                                                (<a href="#" id="tooltip-1" class="tooltip-dep-oper"
+                                                    data-title="Перереєстрація тз при видачі номерного знаку відповідної комбінації цифр">Опер.
+                                                    412</a>,
+
+                                                <a href="#" class="tooltip-dep-oper"
+                                                    data-title="вул. Маршала Малиновського, 130">ТСЦ 1241</a>)
+
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li
+                                        class="list-group-item plate-model-card__list-item plate-model-card__list-item_tall ">
+                                        <span>
+                                            <b class="text-secondary">
+                                                <i class="bi bi-geo-alt-fill plate-model-card__list-item-icon"></i>
+                                                Адрес
+                                            </b>
+                                            <span class="d-block plate-model-card__list-item-text">
+                                                Дніпропетровська область/м.Дніпро, Дніпро
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button class="plate-model-card__btn btn btn-primary btn-sm" collapsed
+                                data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false"
+                                aria-controls="#collapse-1">
+                                Подробнее
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--
+<script src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/ru_RU/appleid.auth.js"></script>
+-->
+
+        <script>
+            const moreText = "Подробнее";
+            const lessText = "Свернуть";
+
+            const vinButtons = document.querySelectorAll('.vin-code-btn');
+            if (vinButtons.length) {
+                vinButtons.forEach(vinBtn => {
+                    vinBtn.onclick = () => {
+                        const fullVinWrapperEl = vinBtn.nextElementSibling;
+                        const fullVinTextEl = fullVinWrapperEl.querySelector('.vin-code-full-text');
+                        const vinCode = vinBtn.querySelector('.vin-code-erased').dataset.full;
+                        fullVinTextEl.textContent = vinCode;
+                        vinBtn.classList.add('d-none');
+                        fullVinWrapperEl.classList.remove('d-none');
+                    }
+                });
+            }
+
+            const cardCollapseButtons = document.querySelectorAll('.plate-model-card__btn');
+            if (cardCollapseButtons.length) {
+                const isCollapsedAttr = 'collapsed';
+                cardCollapseButtons.forEach(btn => {
+                    btn.onclick = () => {
+                        if (btn.hasAttribute(isCollapsedAttr)) {
+                            btn.removeAttribute(isCollapsedAttr);
+                            btn.textContent = lessText;
+                        } else {
+                            btn.setAttribute(isCollapsedAttr, '');
+                            btn.textContent = moreText;
+                        }
+                    };
+                });
+            }
+
+
+        </script>
+
+        <span class="total-auto">
+
+
+        </span>
+
+        <footer class="text-end">
+            <small>Автономер АЕ4000ІТ (AE4000IT, АЕ 4000 ІТ, AE 4000 IT) связан с Синий BMW X3 2017 и 2 другими
+                авто.</small>
+        </footer>
+
+        <script src="https://baza-gai.com.ua/vendor/pagy.min.js"></script>
+        <script>window.addEventListener('load', Pagy.init);</script>
+
+
+        <!-- Скрипты и стили для тултипов -->
+
+        <!-- Другие скрипты и стили -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+        <!-- Контент страницы -->
+
+        <script src="https://baza-gai.com.ua/vendor/pagy.min.js"></script>
+        <script>window.addEventListener('load', Pagy.init);</script>
+    </div>
+
+
+    <!--Внешний скрипт -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
